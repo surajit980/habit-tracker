@@ -1,13 +1,155 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* style add for all element */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: white;
+}a:hover{
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* style for body */
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #171717;
+  color: white;
 }
+
+/* style root div */
+#root{
+  width: 80%;
+  border-right: 1px solid #323232;
+  border-left: 1px solid #323232;
+}
+
+/* style navbar component ---------------------------------*/
+.navbar{
+  align-items: center;
+  display: flex;
+  height: 100px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #323232;
+}
+.right-nav{
+  display: flex;
+  align-items: center;
+}
+.right-nav h5{
+  color: #DDDDDD;
+  margin-right: 10px;
+}
+.addhabit-btn{
+  cursor: pointer;
+  color: white;
+  background-color: #3662CC;
+  padding: 8px 20px;
+  border-radius: 7px;
+}
+/* modal */
+.modal-content{
+  background-color: #333333;
+}
+.modal-header{
+  border: none;
+}
+.modal-footer{
+  border: none;
+}
+/* ---------------------------------------------------- */
+
+/* habits components style------------------------------ */
+.habits{
+  width: 100%;
+}
+
+/* habit under habits component */
+.habit{
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #323232;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.habit:hover{
+  background-color: #323232;
+}
+.habit-left{
+  display: flex;
+  align-items: center;
+}
+.habit-left i{
+  color: #2AA8D0;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #304950;
+  margin-right: 10px;
+}
+.day-complete{
+  color: #767475;
+  font-size:small;
+}
+.habit-right{
+  display: flex;
+  align-items: center;
+}
+.log-btn{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #424242;
+  padding: 10px;
+  border-radius: 7px;
+  margin-right: 10px;
+  color: white;
+  border: none;
+}
+.log-btn:hover{
+  color: white;
+}
+.log-btn i{
+  margin-right: 5px;
+}
+.fa-trash{
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #424242;
+}
+/* ------------------------------------------------------*/
+
+/* style week view container --------------------------- */
+.days-container{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+/* style day view component */
+.day-container{
+  height: 100px;
+  width: 150px;
+  background-color: #323232;
+  border-radius: 20px;
+  padding: 5px;
+}
+p{
+  margin: 0%;
+}
+.circle-icon{
+  font-size: 24px;
+  margin: 5px 11px;
+  /* color: #0B5ED7; */
+  cursor: pointer;
+}
+.active{
+  color: #0B5ED7 ;
+}
+/* ------------------------------------------------------*/
